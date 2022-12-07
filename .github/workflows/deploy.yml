@@ -22,9 +22,6 @@ jobs:
          node-version: 16
          cache: npm
 
-     # パッケージをインストールする
-     - name: Install dependencies
-       run: npm --frozen-lockfile
 
      # ビルドする
      - name: Build
