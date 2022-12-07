@@ -20,7 +20,7 @@ jobs:
        uses: actions/setup-node@v3
        with:
          node-version: 16
-         cache: yarn
+         cache: npm
 
      # パッケージをインストールする
      - name: Install dependencies
@@ -28,7 +28,7 @@ jobs:
 
      # ビルドする
      - name: Build
-       run: yarn build
+       run: npm build
 
      # GitHub Pages にデプロイする
      - name: Deploy
