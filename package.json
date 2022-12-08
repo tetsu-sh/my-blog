@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build && next export && next-export-optimize-images",
     "start": "next start",
     "typecheck": "tsc"
   },
@@ -11,6 +11,7 @@
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "next-export-optimize-images": "^1.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icon": "^1.0.0",
