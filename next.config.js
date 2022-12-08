@@ -1,3 +1,5 @@
+console.log(process.env.GITHUB_ACTIONS);
+
 
 module.exports={
     reactStrictMode:true,
