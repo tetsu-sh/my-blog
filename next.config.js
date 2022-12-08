@@ -3,5 +3,5 @@ module.exports={
     basePath:process.env.GITHUB_ACTIONS && "/my-blog",
     assetPrefix:this.basePath,
     trailingSlash:true,
-    images:{domains:this.basePath},
+    images:{unoptimized:true},
 }
