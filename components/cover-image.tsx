@@ -10,6 +10,7 @@ type Props = {
 
 function imageSrc(src:string): string{
   let basePath=process.env.GITHUB_ACTIONS? '/my-blog':''
+  console.log(basePath)
   return basePath+src
 }
 
