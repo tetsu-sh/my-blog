@@ -6,22 +6,26 @@ import type Author from '../interfaces/author'
 
 type Props = {
   title: string
+  coverImage?:string
   date: string
 }
 
-const PostHeader = ({ title, date}: Props) => {
+const PostHeader = ({ title,coverImage, date}: Props) => {
   return (
-    <section className='flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
-      <PostTitle>{title}</PostTitle>
 
+    <div className='mt-16'>
+      <PostTitle>{title}</PostTitle>
+      <div className="mb-8 md:mb-16 sm:mx-0">
+  {coverImage && <CoverImage title={title} src={coverImage} />}
+      </div>
       <div className="max-w-2xl mx-auto">
 
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
       </div>
+    </div>
 
-    </section>
   )
 }
 

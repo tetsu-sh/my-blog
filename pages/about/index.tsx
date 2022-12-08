@@ -26,13 +26,17 @@ const About=()=>{
             <div className="mb-4">
                 <h1 className="md:text-2xl mb-2">趣味</h1> 
                 <p>猫を愛でる</p>
+                <p>保護猫を何匹か</p>
                 <p>料理</p>
+                <p>カレーをスパイスから作ったり,豚骨らーめんを骨から出汁取ったり</p>
+                <p>コーヒーを豆からひいたり</p>
                 <p>筋トレ</p>
                 <p>漫画</p>
                 <p>ゲーム</p>
+                <p>スマブラやオープンワールドやRPGなど</p>
             </div>
             <div>
-               <h1 className="md:text-4xl mb-2">技術</h1>
+               <h1 className="md:text-2xl mb-2">技術</h1>
                <p>python,FastApiを使いつつ</p>
                <p>Vue.js(Typescript)</p>
                <p>AWS(ECS,S3,DynamoDB,Lambda,SQS etc..)</p>
