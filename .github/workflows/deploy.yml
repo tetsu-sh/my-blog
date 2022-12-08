@@ -26,6 +26,8 @@ jobs:
      - name: Install dependencies
        run: npm install --frozen-lockfile
 
+     - name: check
+       run: echo ${{env.GITHUB_ACTIONS}}
      # ビルドする
      - name: Build
        run: npm run build
