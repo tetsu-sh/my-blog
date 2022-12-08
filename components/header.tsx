@@ -11,7 +11,7 @@ const Header = () => {
         href="/"
         className="rounded px-5 py-2.5 font-mono tracking-tight no-underline hover:bg-gray-700/50 active:bg-gray-600"
       >
-        <span className='test-xs test-gray-100 duration-100'>
+        <span className='test-xs px-5 test-gray-100 duration-100'>
         home
         </span>
       </Link>
