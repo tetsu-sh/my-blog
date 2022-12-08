@@ -11,6 +11,9 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
+import TOC from '../../components/toc'
+import { useEffect } from 'react'
+import tocbot from 'tocbot'
 
 type Props = {
   post: PostType
@@ -23,16 +26,30 @@ export default function Post({ post, morePosts, preview }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  useEffect(() => {
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.post',
+      headingSelector: 'h1,h2, h3',
+      scrollSmoothOffset:-80,
+    })
+
+    return () => tocbot.destroy()
+  }, [])
+
+
   return (
     <Layout preview={preview}>
      <div className='flex min-h-screen flex-col'>
         <Header />
+
       <Container>
+
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+
               <Head>
                 <title>
                   {post.title} 
@@ -43,8 +60,22 @@ export default function Post({ post, morePosts, preview }: Props) {
                 coverImage={post.coverImage}
                 date={post.date}
               />
+              <div className='grid grid-cols-1 lg:grid-cols-5 gap-10'>
+                <div className='lg:col-span-4 center'>
+
+            <article className="mb-32">
+
               <PostBody content={post.content} />
             </article>
+                </div>
+                <aside>
+                <div className='sticky'>
+              <TOC />
+                </div>
+                </aside>
+              </div>
+
+
           </>
         )}
       </Container>
