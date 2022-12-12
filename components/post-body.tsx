@@ -1,5 +1,7 @@
 import markdownStyles from './markdown-styles.module.css'
 
+import React from "react";
+
 type Props = {
   content: string
 }
@@ -11,9 +13,5 @@ const PostBody = ({ content }: Props) => {
         className={markdownStyles['markdown']}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-    </div>
-
-  )
-}
-
+      </div>)}
 export default PostBody

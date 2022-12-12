@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import url('./toc.css');
+@import url('./body.css');
