@@ -8,3 +8,5 @@ date: '2020-03-16T05:35:07.322Z'
 - about page
 - domain
 - seo
+- tag
+- content見やすくする
