@@ -2,7 +2,7 @@
 title: '自作分離キーボード'
 excerpt: '作った'
 coverImage: '/assets/blog/keyboard/keyboard.jpeg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2022-12-10T05:35:07.322Z'
 ---
 
 自作分離キーボードを作った
