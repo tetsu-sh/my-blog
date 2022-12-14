@@ -4,6 +4,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
+    "lint":"next lint",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-seo": "^5.15.0",
+    "prettier": "^2.8.1",
     "prism-themes": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,7 +36,11 @@
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.29.0",
+    "eslint-plugin-react": "^7.31.11",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
   }

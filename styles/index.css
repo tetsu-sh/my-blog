@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('./toc.css');
-@import url('./body.css');
+@import url("./toc.css");
+@import url("./body.css");
