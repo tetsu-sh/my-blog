@@ -1,6 +1,6 @@
 @import "prism-themes/themes/prism-vsc-dark-plus.css";
 
-.post {
+/* .post {
   @apply my-5 text-base font-medium text-neutral-800 dark:text-white !important;
 }
 
@@ -10,7 +10,7 @@
 
 .post p {
   @apply mt-0 mb-9 text-[15px] sm:text-base !important;
-}
+} */
 
 .post h2 {
   @apply px-4 py-2 mt-16 mb-12 border-l-4 border-current text-2xl !important;
@@ -20,23 +20,23 @@
   @apply px-4 py-2 mt-10 mb-8 border-b-2 text-xl !important;
 }
 
-.post h4 {
+/* .post h4 {
   @apply mb-4 text-lg !important;
-}
+}*/
 
-.post ul + p {
+/* .post ul + p {
   @apply mt-5 !important;
-}
+} */
 
-.post code {
+/* .post code {
   font-size: max(12px, 85%) !important;
   @apply whitespace-nowrap font-mono mx-[2px] py-[2px] px-[3px] rounded-sm text-neutral-700 bg-neutral-100 dark:text-neutral-100 dark:bg-neutral-700 !important;
-}
+} */
 
-.post pre code {
+/* .post pre code {
   @apply whitespace-pre m-0 p-0 text-[13px] sm:text-sm text-inherit bg-transparent dark:text-inherit dark:bg-transparent !important;
-}
+} */
 
-.post pre {
+/* .post pre {
   @apply p-4 mb-9 rounded-md !important;
-}
+} */

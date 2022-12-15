@@ -64,11 +64,11 @@ export default function Post({ post, morePosts, preview }: Props) {
                   />
                 </div>
                 <div className="flex gap-10 znc">
-                  <div className="article flex-col">
+                  <div className="article">
                     <PostBody content={post.content} />
                   </div>
                   {lg && (
-                    <div className="aside-toc flex-col">
+                    <div className="aside-toc">
                       <aside className="sticky top-20">
                         <TOC></TOC>
                       </aside>
