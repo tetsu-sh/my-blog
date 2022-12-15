@@ -13,20 +13,18 @@ Git hub actions と next.js のテンプレートで作成した　[こちら](h
 
 - 目次を作る
 
-- seo
-- tag
-- content 見やすくする
-
-- スマホでテキストが表示されないバグ
-
-## やったこと
-
-- zenn css https://zenn.dev/team_zenn/articles/intro-zenn-markdown
-  - mermaid
 - pages のヒエラルキー
 - about page
 - domain
 - mokuji sticky
+- seo
+- tag
+- content 見やすくする
+- mermaid
+
+## やったこと
+
+- zenn css https://zenn.dev/team_zenn/articles/intro-zenn-markdown
 
 ## できること
 
