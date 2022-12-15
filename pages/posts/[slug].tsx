@@ -62,9 +62,9 @@ export default function Post({ post, morePosts, preview }: Props) {
                   date={post.date}
                 />
               </div>
-              <div className="flex gap-10">
+              <div className="flex gap-10 znc">
                 <div className="article">
-                  <article className="mb-32 znc">
+                  <article className="mb-32">
                     <PostBody content={post.content} />
                   </article>
                 </div>
