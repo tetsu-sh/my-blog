@@ -50,32 +50,32 @@ export default function Post({ post, morePosts, preview }: Props) {
             <PostTitle>Loading…</PostTitle>
           ) : (
             <>
-              <div>
-                <Head>
-                  <title>{post.title}</title>
-                </Head>
-              </div>
-              <div>
-                <PostHeader
-                  title={post.title}
-                  coverImage={post.coverImage}
-                  date={post.date}
-                />
-              </div>
-              <div className="flex gap-10 znc">
-                <div className="article">
-                  <article className="mb-32">
-                    <PostBody content={post.content} />
-                  </article>
+              <article>
+                <div>
+                  <Head>
+                    <title>{post.title}</title>
+                  </Head>
                 </div>
-                {lg && (
-                  <div className="aside-toc">
-                    <aside className="sticky top-20">
-                      <TOC></TOC>
-                    </aside>
+                <div>
+                  <PostHeader
+                    title={post.title}
+                    coverImage={post.coverImage}
+                    date={post.date}
+                  />
+                </div>
+                <div className="flex gap-10 znc">
+                  <div className="article flex-col">
+                    <PostBody content={post.content} />
                   </div>
-                )}
-              </div>
+                  {lg && (
+                    <div className="aside-toc flex-col">
+                      <aside className="sticky top-20">
+                        <TOC></TOC>
+                      </aside>
+                    </div>
+                  )}
+                </div>
+              </article>
             </>
           )}
         </Container>
