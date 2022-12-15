@@ -9,8 +9,8 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
-import markdownToHtml from "../../lib/markdownToHtml";
-// import markdownToHtml from "zenn-markdown-html";
+// import markdownToHtml from "../../lib/markdownToHtml";
+import markdownToHtml from "zenn-markdown-html";
 import type PostType from "../../interfaces/post";
 import TOC from "../../components/toc";
 import { useEffect } from "react";
@@ -64,7 +64,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               </div>
               <div className="flex gap-10">
                 <div className="article">
-                  <article className="mb-32">
+                  <article className="mb-32 znc">
                     <PostBody content={post.content} />
                   </article>
                 </div>
