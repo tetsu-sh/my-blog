@@ -15,6 +15,7 @@ import type PostType from "../../interfaces/post";
 import TOC from "../../components/toc";
 import { useEffect } from "react";
 import tocbot from "tocbot";
+import { useBreakPoint } from "../../lib/useBreakPoint";
 
 type Props = {
   post: PostType;
@@ -23,6 +24,7 @@ type Props = {
 };
 
 export default function Post({ post, morePosts, preview }: Props) {
+  const lg = useBreakPoint("lg");
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -67,9 +69,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                   </article>
                 </div>
                 <div className="aside-toc flex flex-col sticky">
-                  <aside>
-                    <TOC></TOC>
-                  </aside>
+                  <aside>{lg && <TOC />}</aside>
                 </div>
               </div>
             </>
