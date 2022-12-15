@@ -9,7 +9,8 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
-import markdownToHtml from "../../lib/markdownToHtml";
+// import markdownToHtml from "../../lib/markdownToHtml";
+import markdownToHtml from "zenn-markdown-html";
 import type PostType from "../../interfaces/post";
 import TOC from "../../components/toc";
 import { useEffect } from "react";
@@ -60,12 +61,12 @@ export default function Post({ post, morePosts, preview }: Props) {
                 />
               </div>
               <div className="flex">
-                <div className="flex flex-col mx-10">
-                  <article className="mb-32">
+                <div className="article flex flex-col mx-10">
+                  <article className="mb-32 znc">
                     <PostBody content={post.content} />
                   </article>
                 </div>
-                <div className="flex flex-col">
+                <div className="aside-toc flex flex-col sticky">
                   <aside>
                     <TOC></TOC>
                   </aside>
@@ -75,6 +76,17 @@ export default function Post({ post, morePosts, preview }: Props) {
           )}
         </Container>
       </div>
+      <style>{`
+        .aside-toc{
+          width:60%;
+          position:sticky;
+          top:20;
+        }
+        .article{
+          width:100%
+          position:relative;
+        }
+        `}</style>
     </Layout>
   );
 }

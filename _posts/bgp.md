@@ -1,13 +1,15 @@
 ---
-title: 'BGP study'
-excerpt: 'BGP'
-date: '2022-12-12T23:30:00.000'
+title: "BGP study"
+excerpt: "BGP"
+date: "2022-12-12T23:30:00.000"
 ---
 
-## BGP をRUSTでやる
+## BGP を RUST でやる
 
-## BGPメモ
+## BGP メモ
+
 - 2022/12/12-
+
 ```mermaid
 flowchart TD;
     IGP;
@@ -34,3 +36,7 @@ flowchart TD;
     ホップ数--is---宛先までに通過するルーターの数のこと
 ```
 
+```mermaid
+flowchart TD;
+    RIP;
+```
