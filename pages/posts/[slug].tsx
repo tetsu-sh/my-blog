@@ -62,15 +62,19 @@ export default function Post({ post, morePosts, preview }: Props) {
                   date={post.date}
                 />
               </div>
-              <div className="flex">
-                <div className="article flex flex-col mx-10">
+              <div className="flex gap-10 sticky-container">
+                <div className="article">
                   <article className="mb-32 znc">
                     <PostBody content={post.content} />
                   </article>
                 </div>
-                <div className="aside-toc flex flex-col sticky">
-                  <aside>{lg && <TOC />}</aside>
-                </div>
+                {lg && (
+                  <div className="aside-toc">
+                    <aside>
+                      <TOC></TOC>
+                    </aside>
+                  </div>
+                )}
               </div>
             </>
           )}
@@ -78,13 +82,14 @@ export default function Post({ post, morePosts, preview }: Props) {
       </div>
       <style>{`
         .aside-toc{
-          width:60%;
+          width:250px;
           position:sticky;
           top:20;
         }
+        .sticky-container{
+        }
         .article{
-          width:100%
-          position:relative;
+          width:(100-aside-toc.width)%
         }
         `}</style>
     </Layout>

@@ -16,6 +16,7 @@ Git hub actions と next.js のテンプレートで作成した　[こちら](h
 - pages のヒエラルキー
 - about page
 - domain
+- mokuji sticky
 - seo
 - tag
 - content 見やすくする

@@ -9,7 +9,7 @@ const About = () => {
     <>
       <Layout>
         <Head>
-          <title>Chimuchimu</title>
+          <title>Chimuchimu About</title>
         </Head>
         <div className="flex min-h-screen flex-col">
           <Header />
@@ -30,10 +30,10 @@ const About = () => {
                 <p>筋トレ</p>
                 <p>漫画</p>
                 <p>ゲーム</p>
+                <p>スマブラやオープンワールドやRPGなど</p>
                 <p>
                   野球をしてたり陸上をしてたり、バスケをしてたり、してなかったり
                 </p>
-                <p>スマブラやオープンワールドやRPGなど</p>
                 <p>生息地：埼玉→仙台→埼玉→東京→千葉</p>
               </div>
               <div>
