@@ -2,7 +2,7 @@
 title: "Next.js でブログ作成した"
 excerpt: "Next.js とGithub Pagesで作った"
 coverImage: "/assets/blog/cover.jpeg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2022-11-16T05:35:07.322Z"
 ---
 
 Git hub actions と next.js のテンプレートで作成した　[こちら](https://github.com/tetsu-sh/my-blog)を参考に
@@ -25,6 +25,8 @@ Git hub actions と next.js のテンプレートで作成した　[こちら](h
 - about page
 - domain
 - mokuji sticky
+- スマホで映らないバグ
+  - css がぶつかっていた（sytle/post.css, zenn-css）ので sytle/post.css を処理
 
 ## できること
 
