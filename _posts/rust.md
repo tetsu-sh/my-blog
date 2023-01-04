@@ -12,10 +12,6 @@ date: "2022-10-16T05:35:07.322Z"
 - 引き続き勉強投資してく。wasm や組み込みもやっていきたい。
 - GraphQL も試しつつローカルアプリ作成中[github/testsu-sh/oisource](https://github.com/tetsu-sh/oisource)
 
-## TRPL
-
-- 5
-
 ## 自転車
 
 - 斜め読み
@@ -35,3 +31,7 @@ date: "2022-10-16T05:35:07.322Z"
 - loop の break に値を渡すと loop の結果として渡すことができる
 - closure はキャプチャ変数を持った環境と、その環境へのポインタと関数へのポインタを持つ。move をすると環境に元の変数から所有権が移る
 - channel
+
+## TRPL
+
+- 5

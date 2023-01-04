@@ -13,9 +13,10 @@ const About = () => {
         </Head>
         <div className="flex min-h-screen flex-col">
           <Header />
+          <span className="flex min-w-screen flex-col my-5">
+            <img src="/assets/about/turkey_header.jpeg" alt="" />
+          </span>
           <Container>
-            <Intro />
-
             <div className="flex flex-col text-center">
               <div className="mb-4 md:text-4xl">about me</div>
               <div className="mb-4">
