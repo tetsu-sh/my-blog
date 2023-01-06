@@ -33,7 +33,13 @@
     "typescript": "^4.7.4",
     "zenn-content-css": "^0.1.134",
     "zenn-embed-elements": "^0.1.134",
-    "zenn-markdown-html": "^0.1.134"
+    "zenn-markdown-html": "^0.1.134",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/styled-engine-sc": "^5.11.0",
+    "@mui/x-data-grid": "^5.17.16",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",

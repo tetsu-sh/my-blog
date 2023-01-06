@@ -31,6 +31,7 @@ date: "2022-10-16T05:35:07.322Z"
 - loop の break に値を渡すと loop の結果として渡すことができる
 - closure はキャプチャ変数を持った環境と、その環境へのポインタと関数へのポインタを持つ。move をすると環境に元の変数から所有権が移る
 - channel
+- Arc,Mutex,RWRock
 
 ## TRPL
 
