@@ -12,7 +12,7 @@ import * as fs from "fs";
 
 import Link from "next/link";
 
-const jsonData = require("../../source/source.json");
+import jsonData from "../../source/source.json";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 120, sortable: true },
@@ -29,7 +29,7 @@ const columns: GridColDef[] = [
     headerName: "URL",
     width: 300,
     renderCell: (params) => (
-      <a target="_blank" href={`${params.value}`}>
+      <a target="_blank" href={`${params.value}`} rel="noopener noreferrer">
         <u>{params.value}</u>
       </a>
     ),
