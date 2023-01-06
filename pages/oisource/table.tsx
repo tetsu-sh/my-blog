@@ -12,7 +12,7 @@ import * as fs from "fs";
 
 import Link from "next/link";
 
-const jsonData = require("../../oisource-source/source.json");
+const jsonData = require("../../source/source.json");
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 120, sortable: true },
