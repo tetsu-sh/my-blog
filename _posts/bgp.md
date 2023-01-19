@@ -17,6 +17,8 @@ flowchart TD;
     IGP;
     AS;
     BGP-->EGP;
+    BGPネイバー--- BGPピア
+    BGPピア-->BGPの接続
     BGP--internal---IBGP-->トランジットASで使用
     BGP--external---EBGP
     BGPピア-->スリーウェイハンドシェイク;

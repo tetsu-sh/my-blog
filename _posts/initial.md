@@ -64,3 +64,5 @@ classDiagram
   Student "1" --o "1" Bike : rides
 
 ```
+
+[link](/posts/dddr)
