@@ -29,19 +29,19 @@ const columns: GridColDef[] = [
   },
   {
     field: "summary",
-    headerName: "Summary",
+    headerName: "Description",
     width: 500,
     sortable: true,
   },
   {
-    field: "createdAt",
+    field: "created_at",
     headerName: "created_at",
     type: "datetime",
     width: 160,
     sortable: true,
   },
   {
-    field: "crawledAt",
+    field: "crawled_at",
     headerName: "crawled_at",
     type: "datetime",
     width: 160,
@@ -50,6 +50,7 @@ const columns: GridColDef[] = [
 ];
 
 export default function DataTable() {
+  console.log(jsonData)
   return (
     <div style={{ height: 1000, width: "100%" }}>
       <DataGrid
@@ -69,7 +70,7 @@ export default function DataTable() {
         }}
         rows={jsonData}
         columns={columns}
-        pageSize={50}
+        pageSize={100}
         rowsPerPageOptions={[10]}
         checkboxSelection
       />
