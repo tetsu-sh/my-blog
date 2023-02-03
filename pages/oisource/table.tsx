@@ -1,23 +1,16 @@
-import { useEffect } from "react";
 import {
   DataGrid,
-  GridColDef,
-  GridValueGetterParams,
-  GridToolbar,
+  GridColDef, GridToolbar
 } from "@mui/x-data-grid";
-import { Box, Button } from "@mui/material";
-import { AccessAlarm } from "@mui/icons-material";
 
-import * as fs from "fs";
 
-import Link from "next/link";
 
 import jsonData from "../../source/source.json";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 120, sortable: true },
   { field: "title", headerName: "Title", width: 800, sortable: true },
-  { field: "auther", headerName: "Auther", width: 130, sortable: true },
+  { field: "author", headerName: "Author", width: 130, sortable: true },
   {
     field: "media",
     headerName: "Media",
