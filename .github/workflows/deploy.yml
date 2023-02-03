@@ -16,6 +16,8 @@ jobs:
      # main ブランチを取得する
      - name: Checkout
        uses: actions/checkout@v3
+       with:
+        submodules: recursive
 
      # Node.js のセットアップをする
      - name: Setup Node
