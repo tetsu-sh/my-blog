@@ -1,1 +1,2 @@
+- blog written by nextjs template in github hosting.
 - https://blog.chimu-chimu.org
