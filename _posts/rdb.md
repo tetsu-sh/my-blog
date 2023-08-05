@@ -1,5 +1,5 @@
 ---
-title: "Rdb"
+title: "RDB"
 excerpt: "読んだメモ"
 date: "2022-11-20T05:35:07.322Z"
 ---
@@ -93,7 +93,7 @@ select shop, count(SI.item) as my_item,count(select item from Items)-my_item fro
 - 前年からの変化を調べる。window function
 - window function は mysql では 8~
 - 相関サブクエリはウィンドウ関数に書き換えられるとパフォーマンス上がるかも
-- pagenation もウィンドウ関数で？
+- pagination もウィンドウ関数で？
 
 -　 master を（view で）作って外部結合し、行列
 
@@ -101,3 +101,7 @@ select shop, count(SI.item) as my_item,count(select item from Items)-my_item fro
 select age_range,sex, tblpopchanged.tohoku,tblpopchanged.kanto from (select _ from TblPop sum(case when pref_name in ('秋田','青森') then population else null end) as tohoku,sum(case when pref_name in ('東京','千葉') then population else null end) as kanto ) as tblpopchanged
 outer join (select _ from TblAge cross join TblSex) as SexAndAge on SexAndAge.age_class=tblpopchanged.age_class
 ```
+
+
+- 開発コードや仮コード、製品コードなどコードの履歴を持ちたいときは適応期間をスキーマにもったヒストリーテーブルを作る
+- コードの読みかえ。ものは同じだが社外のコードと車内のコード→交差テーブル
